@@ -11,18 +11,18 @@ RUN apk --no-cache add git tar bzip2 ca-certificates && update-ca-certificates
 
 # get sample Armidale spatial data
 
-RUN wget --no-check-certificate -O sampledata.tar.gz https://github.com/NSW-OEH-EMS-KST/grid-garage-sample-data/archive/GridGarage_SampleData_v1.0.2.tar.gz && \
+RUN wget --no-check-certificate -O armidale.tar.gz https://github.com/NSW-OEH-EMS-KST/grid-garage-sample-data/archive/GridGarage_SampleData_v1.0.2.tar.gz && \
     tar -xzf armidale.tar.gz && rm armidale.tar.gz
 
 # get sample MCASS spatial data
 
-RUN wget --no-check-certificate -O sampledata.tar.gz https://github.com/byezy/mcassexample/archive/v1.0.tar.gz && \
+RUN wget --no-check-certificate -O mcass.tar.gz https://github.com/byezy/mcassexample/archive/v1.0.tar.gz && \
     tar -xzf mcass.tar.gz && rm mcass.tar.gz
     
 # get github code source
 
 # BeakerX
-RUN wget --no-check-certificate -O sampledata.tar.gz https://github.com/twosigma/beakerx/archive/1.4.1.tar.gz && \
+RUN wget --no-check-certificate -O beakerx.tar.gz https://github.com/twosigma/beakerx/archive/1.4.1.tar.gz && \
     tar -xzf beakerx.tar.gz && rm beakerx.tar.gz
 
 # gg
