@@ -15,3 +15,9 @@ RUN wget --no-check-certificate -O sampledata.tar.gz https://github.com/NSW-OEH-
 
 RUN wget --no-check-certificate -O sampledata.tar.gz https://github.com/byezy/mcassexample/archive/v1.0.tar.gz && \
     tar -xzf sampledata.tar.gz && rm sampledata.tar.gz
+    
+# get github code source
+
+RUN wget --no-check-certificate -O ggub.tar.gz https://github.com/byezy/ggub/archive/v16-dev.tar.gz && \
+    tar -xzf ggub.tar.gz && rm ggub.tar.gz
+
