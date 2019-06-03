@@ -6,8 +6,8 @@ ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 
 RUN apk --no-cache add git tar bzip2 ca-certificates && update-ca-certificates
 
-RUN mkdir /spatial_data
-WORKDIR /spatial_data
+# RUN mkdir /spatial_data
+# WORKDIR /spatial_data
 
 # get sample Armidale spatial data
 
