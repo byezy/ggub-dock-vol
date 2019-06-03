@@ -23,7 +23,7 @@ RUN wget --no-check-certificate -O sampledata.tar.gz https://github.com/byezy/mc
 
 # BeakerX
 RUN wget --no-check-certificate -O sampledata.tar.gz https://github.com/twosigma/beakerx/archive/1.4.1.tar.gz && \
-    tar -xzf sampledata.tar.gz && rm sampledata.tar.gz
+    tar -xzf beakerx.tar.gz && rm beakerx.tar.gz
 
 # gg
 
