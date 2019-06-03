@@ -21,6 +21,12 @@ RUN wget --no-check-certificate -O sampledata.tar.gz https://github.com/byezy/mc
     
 # get github code source
 
+# BeakerX
+RUN wget --no-check-certificate -O sampledata.tar.gz https://github.com/twosigma/beakerx/archive/1.4.1.tar.gz && \
+    tar -xzf sampledata.tar.gz && rm sampledata.tar.gz
+
+# gg
+
 RUN wget --no-check-certificate -O ggub.tar.gz https://github.com/byezy/ggub/archive/v16-dev.tar.gz && \
     tar -xzf ggub.tar.gz && rm ggub.tar.gz
 
